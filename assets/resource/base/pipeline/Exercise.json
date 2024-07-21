@@ -1,0 +1,15 @@
+{
+    "打开出击界面": {
+        "recognition": "OCR",
+        "expected": "出击",
+        "action": "Click",
+        "next": [
+            "打开演习界面"
+        ]
+    },
+    "打开演习界面": {
+        "recognition": "OCR",
+        "expected": "演习",
+        "action": "Click"
+    }
+}

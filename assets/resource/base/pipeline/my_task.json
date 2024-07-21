@@ -1,5 +1,29 @@
 {
-    "MyTask1": {},
-    "MyTask2": {},
-    "MyTask3": {}
+    "打开app": {
+        "action": "StartApp",
+        "package": "com.bilibili.azurlane/com.manjuu.azurlane.MainActivity",
+        "next": [
+            "等待画面"
+        ]
+    },
+    "等待画面": {
+        "post_delay": 20000,
+        "next": [
+            "触摸屏幕执行权限认证"
+        ]
+    },
+    "触摸屏幕执行权限认证": {
+        "recognition": "OCR",
+        "expected": "触摸屏幕执行权限认证",
+        "action": "Click",
+        "next": [
+            "再点一下"
+        ]
+    },
+    "再点一下": {
+        "post_delay": 10000,
+        "recognition": "OCR",
+        "expected": "触摸屏幕执行权限认证",
+        "action": "Click"
+    }
 }

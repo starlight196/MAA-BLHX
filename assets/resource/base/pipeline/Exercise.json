@@ -40,6 +40,15 @@
     "出击": {
         "recognition": "OCR",
         "expected": "出击",
+        "action": "Click",
+        "next": [
+            "等待演习结束"
+        ]
+    },
+    "等待演习结束": {
+        "pre_wait_freezes": 5000,
+        "recognition": "OCR",
+        "expected": "战斗评价",
         "action": "Click"
     }
 }
